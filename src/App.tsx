@@ -49,7 +49,7 @@ function App() {
 					</button>
 				))}
 			</nav>
-			<PokemonCard pokemon={pokemon} />
+			<PokemonCard name={pokemon.name} imgSrc={pokemon.imgSrc} />
 		</div>
 	);
 }
