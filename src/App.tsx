@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 
 import PokemonCard from "./components/PokemonCard";
+import NavBar from "./components/NavBar";
 
 const pokemonList = [
 	{
@@ -38,7 +39,7 @@ function App() {
 
 	return (
 		<div>
-			<nav>
+			{/* <nav>
 				{pokemonList.map((pokemon) => (
 					<button
 						type="button"
@@ -48,7 +49,8 @@ function App() {
 						{pokemon.name}
 					</button>
 				))}
-			</nav>
+			</nav> */}
+			<NavBar pokemonList={pokemonList} setPokemonName={setPokemonName} />
 			<PokemonCard name={pokemon.name} imgSrc={pokemon.imgSrc} />
 		</div>
 	);
